@@ -53,6 +53,14 @@ while loop == True:
     # listaHorasFilme  # Ta ali em cima
 
     # FUNÇÃO DESCOBRIR GÊNERO PREFERIDO
+    def generoFav():
+        favgen = input("qual seu gênero de filmes favorito ?")
+        tem_numero = any(char.isdigit() for char in favgen)
+        print(tem_numero)
+        if favgen not in listaGeneros:
+            listaGeneros.append(favgen)
+            print(listaGeneros)
+
 
     # def generoFav():
 
